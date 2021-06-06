@@ -1,4 +1,19 @@
 <?php get_header(); ?>
+<header>
+        <div class="h-container">
+            <div class="logo"><a href="<?php echo home_url('/'); ?>">
+             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/posting-sanpomichi-logo.png" alt="【業界最安保証】東京23区でチラシを撒くならポスティング散歩道"/>
+             </a></div>
+            <div class="map1 pc-only"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-tokyo-23-ku-map-pc.jpg" alt="東京23区対応" /></div>
+            <div class="tel pc-only margin-rl"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-free-call-pc.jpg" alt="受付時間9:00-18:00（日祝）を除く0120-359-125" /></div>
+            <div class="map1 sp-only"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-smp.png" alt="東京23区対応" /></div>
+            <div class="mitsumori">
+                <a href="#s-form">
+                    <img class="over-tb" src="<?php echo get_template_directory_uri(); ?>/assets/images/header-contact-us-free-bnr-pc.jpg" alt="お見積り・ご相談はこちら" />
+                </a>
+            </div>
+        </div>
+    </header>
 
 	<main role="main" aria-label="Content" class="p-thanks">
 		<!-- section -->

@@ -20,38 +20,7 @@ jQuery( '#your-zip' ).keyup( function() {
 
 //レスポンシブ時に画像の切り替えを行う
 $(function () {
-    var $elem = $(".js-imageChange");
-    var sp = "-smp.";
-    var pc = "-pc.";
-    var replaceWidth = 769;
-
-    function imageSwitch() {
-      var windowWidth = parseInt($(window).width());
-      $elem.each(function () {
-        var $this = $(this);
-        if (windowWidth >= replaceWidth) {
-          if ($this.attr("src")) {
-            $this.attr("src", $this.attr("src").replace(sp, pc));
-          } else {
-            $this.attr("data-src", $this.attr("data-src").replace(sp, pc));
-          }
-        } else {
-          if ($this.attr("src")) {
-            $this.attr("src", $this.attr("src").replace(pc, sp));
-          } else {
-            $this.attr("data-src", $this.attr("data-src").replace(pc, sp));
-          }
-        }
-      });
-    }
-    imageSwitch();
-    var resizeTimer;
-    $(window).on("resize", function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function () {
-        imageSwitch();
-      }, 200);
-    });
+    
 
     let mySwiper = new Swiper ('.swiper-container', {
         // 以下にオプションを設定

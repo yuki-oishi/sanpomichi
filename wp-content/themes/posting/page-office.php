@@ -1,8 +1,48 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js">
+
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TTGZJ5S');</script>
+<!-- End Google Tag Manager -->
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<!-- <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' : '; } ?></title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/icofont.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/normalize.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/skeleton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+        integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+		<link href="//www.google-analytics.com" rel="dns-prefetch">
+		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons/favicon-32x32.png" rel="shortcut icon">
+		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.3/dist/viewport-extra.min.js"></script>
+	<link rel="preload" as="image" href="https://posting-sanpomichi.com/wp/wp-content/themes/posting/assets/images/ab/header-main-ab_mob.png" />
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTGZJ5S"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
 
 <header>
         <div class="h-container">
-            <div class="logo"><a href="<?php echo home_url('/'); ?>">
+            <div class="logo"><a href="https://posting-sanpomichi.com/office/">
              <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/posting-sanpomichi-logo.png" alt="【業界最安保証】東京23区でチラシを撒くならポスティング散歩道"/>
              </a></div>
             <div class="map1 pc-only"><img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/header-tokyo-23-ku-map-pc.jpg" alt="東京23区対応" /></div>
@@ -23,9 +63,9 @@
             <!-- hero -->
             <section class="s-hero">
              <picture>
-                <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header-main_mob.png" alt="東京23区で実績№1のポスティング散歩道に全てお任せください!" media="(max-width:450px)">
-                <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header-main-smp.png" alt="東京23区で実績№1のポスティング散歩道に全てお任せください!" media="(max-width:769px)">
-                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/header-main-pc.png" alt="東京23区で実績№1のポスティング散歩道に全てお任せください!"/>
+                <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/header-main-ab_mob.png" alt="東京23区で実績№1のポスティング散歩道に全てお任せください!" media="(max-width:450px)">
+                <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/header-main-ab-smp.png" alt="東京23区で実績№1のポスティング散歩道に全てお任せください!" media="(max-width:769px)">
+                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ab/header-main-ab-pc.png" alt="東京23区で実績№1のポスティング散歩道に全てお任せください!"/>
              </picture>
             </section>
 
@@ -42,11 +82,11 @@
                             <li>デザインや印刷が<span class="yellow-underline fwb ">ワンストップでできたら楽なのに</span></li>
                             <li>他社にポスティングを依頼したが<span class="yellow-underline fwb ">反響がイマイチ</span></li>
                             <li><span class="yellow-underline fwb ">ターゲットを絞って</span>ポスティングがしたい</li>
-                            <li><span class="yellow-underline fwb ">高収入世帯の方へ</span>チラシを配布したい</li>
+                            <li><span class="yellow-underline fwb ">事業所・一戸建てへ</span>チラシを配布したい</li>
                         </ul>
                     <picture>
                         <source class="nayami_women" data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/worried-clerk-women_mob.png" alt="ポスティングで悩む女性" media="(max-width:560px)">
-                        <img class="nayami_women lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/worried-clerk-women.png" alt="ポスティングで悩む女性" />
+                        <img class="nayami_women lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/worried-clerk-women.png" alt="ポスティングで悩む女性"/>
                     </picture>
                     <picture>
                         <source class="nayami_men" data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/worried-clerk-men_mob.png" alt="ポスティングで悩む男性" media="(max-width:560px)">
@@ -74,22 +114,16 @@
                         ポスティング散歩道なら<br><span class="c-red fwb"><img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/left.png" alt="ポスティング散歩道なら">以下の内容は全て対応</span>できます!<img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/right.png" alt="以下の内容は全て対応できます">
                     </p>
                 </div>
-                    <div class="cor-menu-area">
-                        <div class="cor-menu">全戸配布案件</div>
+                <div class="cor-menu-area">
                         <div class="cor-menu">特殊サイズ対応</div>
                         <div class="cor-menu">イベント誘致用</div>
-                        <div class="cor-menu">整体院のチラシ配布</div>
                         <div class="cor-menu">レポートは<br class="cor-br">当日中に報告</div>
-                        <div class="cor-menu">飲食店のメニュー配布</div>
-                        <div class="cor-menu">指定エリア内軒並配布</div>
                         <div class="cor-menu">富裕層向けチラシ配布</div>
-                        <div class="cor-menu">10,000部以下の案件</div>
-                        <div class="cor-menu">集合配布案件</div>
-                        <div class="cor-menu">美容室のチラシ配布</div>
-                        <div class="cor-menu">求人チラシの配布</div>
+                        <div class="cor-menu">5,000部以下の案件</div>
+                        <div class="cor-menu">戸建配布案件</div>
+                        <div class="cor-menu">事業所配布案件</div>
                         <div class="cor-menu">スピード対応案件</div>
                         <div class="cor-menu">不動産の販売促進</div>
-                        <div class="cor-menu">スポーツクラブの<br class="cor-br">チラシ配布</div>
                         <div class="cor-menu">エリア指定配布</div>
                         <div class="cor-menu">都内及び近郊への<br class="cor-br">引取無料</div>
                         <div class="cor-menu">ワンストップ案件</div>
@@ -101,9 +135,9 @@
             <!-- contact -->
             <section class="s-contact">
                 <picture>
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-smp.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
-                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-pc.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-smp.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
+                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-pc.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
                 </picture>
                 <a class="b-tel" href="tel:0120359125"></a>
                 <a class="b-mitsumori" href="#s-form"></a>
@@ -119,8 +153,7 @@
                             <picture>
                                 <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/expert-team_mob.png" alt="ポスティング散歩道のバックアップ体制" media="(max-width:450px)">
                                 <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/expert-team-smp.jpg" alt="ポスティング散歩道のバックアップ体制" media="(max-width:769px)">
-                                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/expert-team-pc.jpg" alt="ポスティング散歩道のバックアップ体制" />
-                            </picture>
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/expert-team-pc.jpg" width="900" height="600" alt="ポスティング散歩道のバックアップ体制" />
                           </div>
                         <div class="six columns">
                             <p class="mt-1">ポスティング散歩道は、<span
@@ -214,7 +247,7 @@
                                 </span>
                             </h3>
                             <p class="sec02__rs-txt">
-                            ポスティングで悩むのがコストではないでしょうか。ポスティング散歩道なら、<span class="c-red fwb">1円/枚～配布可能</span>です。一般的な配布業者は複数のチラシを併配して利益を出しながら、配布スタッフにも納得の報酬を与えつつ、<span class="c-red fwb">配布コストを削減</span>しています。当社では、チラシ制作や印刷・配布までワンストップで行えるため、<span class="yellow-underline fwb">全体のコストから配布コストまで削減できるようコスト管理を徹底しています。</span><br>
+                            ポスティングで悩むのがコストではないでしょうか。ポスティング散歩道なら、<span class="c-red fwb">7円/枚～配布可能</span>です。一般的な配布業者は複数のチラシを併配して利益を出しながら、配布スタッフにも納得の報酬を与えつつ、<span class="c-red fwb">配布コストを削減</span>しています。当社では、チラシ制作や印刷・配布までワンストップで行えるため、<span class="yellow-underline fwb">全体のコストから配布コストまで削減できるようコスト管理を徹底しています。</span><br>
                             また当社ではグループ会社の数種類のチラシを都内及び近郊に<span class="c-red fwb">毎月180万枚～330万枚配布</span>しており、そちらで得た利益を<span class="yellow-underline fwb">最大限にお客様へ還元させていただくことが可能</span>です。そのため、同業他社では真似できない<span class="c-red fwb">利益率0％の配布も弊社では可能</span>です。<br>
                             ポスティング散歩道では、<span class="yellow-underline fwb">無駄なコストを徹底的に削減、グループ会社で得た利益をお客様へ最大限に還元ができる、</span>からこそ、<span class="c-red fwb">圧倒的な最安値が実現</span>できます。<span class="yellow-underline fwb">「最小限の費用で最大限の効果を実感したい」</span>というお客様の思いに全力でお応えします。</p>
 
@@ -226,9 +259,9 @@
             <!-- contact -->
             <section class="s-contact">
                 <picture>
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-smp.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
-                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-pc.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-smp.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
+                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-pc.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
                 </picture>
                 <a class="b-tel" href="tel:0120359125"></a>
                 <a class="b-mitsumori" href="#s-form"></a>
@@ -249,7 +282,7 @@
                         </div>
                         <div class="down-area row">
                             <div class="six columns">
-                                <img class="lazyload sp-only" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/distributor-management-pc.png" alt="配布員の管理画面" class="sp-only">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/distributor-management-pc.png" alt="配布員の管理画面" class="sp-only lazyload">
                                 <p><span class="yellow-underline fwb">「ポスティングを依頼してみたけど、反響があまりなかった」「配布員がポストに入れているか把握しきれない」</span>と悩んだことはありませんか。</p>
                                 <p>どんなに魅力的なチラシを作っても、ターゲットの手元に届かなければ、反響も期待できません。だからこそ、<span class="c-red fwb">配布員の管理は最重要事項</span>といえるでしょう。</p>
                                 <p>ポスティング散歩道では、<span class="yellow-underline fwb">配布スタッフの教育に他社の倍以上のコストや時間を使っています。</span>スタッフは全員、社内研修及び現場研修に参加し、配布のルールを学びます。また<span class="c-red fwb">新人・ベテラン問わず、覆面調査を実施。</span>日々各エリアに覆面スタッフをチェックインさせ、配布時の態度をくまなくチェックします。</p>
@@ -287,7 +320,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <img class="lazyload pc-only" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/distributor-management-pc.png" alt="配布員の管理画面" class="pc-only">
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/distributor-management-pc.png" alt="配布員の管理画面" class="pc-only lazyload">
                             </div>
                         </div>
                     </div>
@@ -332,7 +365,7 @@
                         </div>
                         <div class="down-area row">
                             <div class="six columns">
-                                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/speed-compatible.png" class="" alt="最短翌日配布のスピード対応!" />
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/speed-compatible.png" alt="最短翌日配布のスピード対応!" />
                             </div>
                             <div class="six columns">
                                 <p><span class="yellow-underline fwb">情報はスピードが命です。</span>お客様が欲しいと感じたタイミングで、さっと必要な情報を差し出せる状態がベスト。しかし<span class="c-red fwb">「お客様にチラシを届けたい！」と思っても、ポスティング会社の都合が合わないことも</span>ありますよね。</p>
@@ -351,7 +384,7 @@
                         </div>
                         <div class="down-area row">
                             <div class="six columns">
-                                <img class="lazyload sp-only mb-2" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/staff-progress-management.png" class="sp-only mb-2" alt="専任スタッフによる進捗管理" />
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/staff-progress-management.png" class="sp-only mb-2 lazyload" alt="専任スタッフによる進捗管理" />
                                 <p><span
                                         class="yellow-underline fwb">「ポスティングを依頼したけど、本当に配布されたのかな？」</span>と疑問に思うことはありませんか。実際にスタッフが、<span
                                         class="c-red fwb">配布を行わず、チラシを捨ててしまうことも</span>あるようです。</p>
@@ -365,7 +398,7 @@
                                         class="yellow-underline fwb">「任せてよかった」と言っていただける企業体制を目指しています。</span></p>
                             </div>
                             <div class="six columns">
-                                <img class="lazyload pc-only" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/staff-progress-management.png" class="pc-only" alt="専任スタッフによる進捗管理" />
+                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/staff-progress-management.png" class="pc-only lazyload" alt="専任スタッフによる進捗管理" />
                             </div>
                         </div>
                     </div>
@@ -379,7 +412,7 @@
                         </div>
                         <div class="down-area row">
                             <div class="six columns">
-                                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/claim-support.png" class="" alt="万全なクレーム対応とトータルサポート" />
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/claim-support.png" alt="万全なクレーム対応とトータルサポート" />
                                 <table class="u-full-width mt-3 border-none pc-only">
                                     <tbody>
                                         <tr>
@@ -453,9 +486,9 @@
             <!-- contact -->
             <section class="s-contact">
                 <picture>
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-smp.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
-                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-pc.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-smp.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
+                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-pc.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
                 </picture>
                 <a class="b-tel" href="tel:0120359125"></a>
                 <a class="b-mitsumori" href="#s-form"></a>
@@ -472,13 +505,16 @@
                                 <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/compare/row_1_01.png" alt="広告の種類" />
                             </div>
                             <div class="row">
-                                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/compare/row_1_02.png" alt="建物種別:戸建て・集合住宅・マンション・アパート・事業所まで全て選べる"/>
+                                <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ab/row_1_02.png" alt="建物種別:戸建・事業所配布"/>
+                                <div class="row_txt row_txt01 row_txt_ab"><p>選べない</p></div>
+                                <div class="row_txt row_txt02 row_txt_ab"><p>選べる</p></div>
+                                <div class="row_txt row_txt03 row_txt_ab fwb"><p>戸建・事業所配布</p></div>
                             </div>
                             <div class="row">
                                 <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/compare/row_1_03.png" alt="配布単位" />
                                 <div class="row_txt row_txt01"><p>2.7円～</p></div>
                                 <div class="row_txt row_txt02"><p>1.5円～</p></div>
-                                <div class="row_txt row_txt03 c-red fwb"><p>1円～</p></div>
+                                <div class="row_txt row_txt03 c-red fwb"><p>7円～</p></div>
                             </div>
                             <div class="row">
                                 <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/compare/row_1_05.png" alt="配達できる広告の種類" />
@@ -486,7 +522,7 @@
                                 <div class="row_txt row_txt02"><p>チラシ・カタログ<br class="__pc">冊子・パンフレット</p></div>
                                 <div class="row_txt row_txt03 fwb"><p>チラシ・カタログ<br class="__pc">冊子・パンフレット</p></div>
                             </div>
-                            <div class="row">
+                            <div class="row"> 
                                 <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/compare/row_1_06.png" alt="配達員の管理方法" />
                                 <div class="row_txt row_txt01"><p>配布員個人に<br>委ねている</p></div>
                                 <div class="row_txt row_txt02"><p>GPSシステムを用いて<br class="__pc">リアルタイムでチェック</p></div>
@@ -512,9 +548,9 @@
             <!-- contact -->
             <section class="s-contact">
                 <picture>
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-smp.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
-                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-pc.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-smp.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
+                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-pc.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
                 </picture>
                 <a class="b-tel" href="tel:0120359125"></a>
                 <a class="b-mitsumori" href="#s-form"></a>
@@ -531,7 +567,7 @@
                         <?php 
                             $args = array (
                                 'posts_per_page' => -1,
-                                'post_type' => array('voice'),
+                                'post_type' => array('voice_ab'),
                                 'orderby' => 'date',
                                 'order' => 'DESC',
                             );
@@ -680,9 +716,9 @@
             <!-- contact -->
             <section class="s-contact">
                 <picture>
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-smp.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
-                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-pc.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-smp.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
+                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-pc.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
                 </picture>
                 <a class="b-tel" href="tel:0120359125"></a>
                 <a class="b-mitsumori" href="#s-form"></a>
@@ -704,7 +740,7 @@
                                     class="c-red fwb">配布スタッフをご紹介</span>します。</p>
                         </div>
                         <div>
-                            <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/posting-owner.png" alt="ポスティング散歩道の代表" class="owner m-auto">
+                            <img data-src="<?php echo get_template_directory_uri(); ?>/assets/images/posting-owner.png" alt="ポスティング散歩道の代表" class="owner m-auto lazyload" >
                         </div>
                     </div>
                 </div>
@@ -772,7 +808,6 @@
                         <li class="s-faq__faqnavi-items"><a class="s-faq__faqnavi-link" href="#faq03">もし反響が出なかったらどうするのですか？</a></li>
                         <li class="s-faq__faqnavi-items"><a class="s-faq__faqnavi-link" href="#faq04">どんな人が配布するのですか？</a></li>
                         <li class="s-faq__faqnavi-items"><a class="s-faq__faqnavi-link" href="#faq05">クレームが発生したら、誰が対応するのですか？</a></li>
-                        <li class="s-faq__faqnavi-items"><a class="s-faq__faqnavi-link" href="#faq06">配布してほしい建物や地域を細かく指定できますか？</a></li>
                         <li class="s-faq__faqnavi-items"><a class="s-faq__faqnavi-link" href="#faq07">移動型ってなんですか？</a></li>
                         <li class="s-faq__faqnavi-items"><a class="s-faq__faqnavi-link" href="#faq08">どのような業種からの依頼が多いのですか？</a></li>
                         <li class="s-faq__faqnavi-items"><a class="s-faq__faqnavi-link" href="#faq09">年末年始やGW･お盆期間中も配布してくれますか？</a></li>
@@ -819,13 +854,6 @@
                                 class="icon-side">当社スタッフが迅速に対応いたしますので、ご連絡ください。お客様宅へ訪問し謝罪したのち、チラシの回収を行います。投函NGの物件はデータベース化し、再発防止策を徹底します
                         </dd>
                     </dl>
-                    <dl class="s-faq__faq-wrap" id="faq06">
-                        <dt class="s-faq__faq-q"><span class="icon-q">Q</span><span
-                                class="icon-side">配布してほしい建物や地域を細かく指定することはできますか？</span></dt>
-                        <dd class="s-faq__faq-a"><span class="icon-a">A</span><span
-                                class="icon-side">当社は軒並（全て）・集合（戸建て除外）・全戸（事業所除外）・集戸（戸建てと事業所除外）・戸建・その他セグメントや別途スタッフへの指示など細かな指定を行い配布も可能です。詳細は当社までお問い合わせください。
-                        </dd>
-                    </dl>
                     <dl class="s-faq__faq-wrap" id="faq07">
                         <dt class="s-faq__faq-q"><span class="icon-q">Q</span><span class="icon-side">移動型ってなんですか？</span></dt>
                         <dd class="s-faq__faq-a"><span class="icon-a">A</span><span
@@ -836,7 +864,7 @@
                         <dt class="s-faq__faq-q"><span class="icon-q">Q</span><span
                                 class="icon-side">どのような業種からの依頼が多いのですか？</span></dt>
                         <dd class="s-faq__faq-a"><span class="icon-a">A</span><span
-                                class="icon-side">不動産やエステ・飲食店・スポーツクラブ・学習塾などの多くの企業・個人事業主様からご依頼頂いております。ジャンルに決まりはなく、基本的にどのような業種でも配布可能です。
+                                class="icon-side">不動産、ガーデニング、塗装、レンタルオフィス、テレワーク環境整備、コロナ対策マスクなど多くの企業・個人事業主様からご依頼頂いております。ジャンルに決まりはなく、基本的にどのような業種でも配布可能です。
                         </dd>
                     </dl>
                     <dl class="s-faq__faq-wrap" id="faq09">
@@ -919,16 +947,16 @@
                         <li>・<img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/security-icon.png" alt="security-icon"> 当サイトはお客様に入力していただいた情報をSSL (暗号化通信プロトコル) を使用して送信を行うため、安心してご利用頂けます。</li>
                         <li>・ 半角カタカナでのご入力はお控え下さい。</li><li>・<span class="c-red">※</span>は必須入力項目です。</li>
                     </ul>
-                    <?php echo do_shortcode( '[contact-form-7 id="37" title="contact"]' ); ?>
+                    <?php echo do_shortcode( '[contact-form-7 id="84" title="contact"]' ); ?>
                 </div>
             </section>
 
             <!-- contact -->
             <section class="s-contact">
                 <picture>
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
-                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-smp.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
-                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-us-bnr-top-pc.jpg" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab_mob.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:450px)">
+                    <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-smp.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" media="(max-width:769px)">
+                    <img class="lazyload" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ab/contact-us-bnr-top-ab-pc.png" alt="お急ぎの方はコチラ! フリーダイヤル 0120-359-125 受付時間:9:00～18:00(日祝を除く) 完全無料 お見積り・ご相談依頼" />
                 </picture>
                 <a class="b-tel" href="tel:0120359125"></a>
                 <a class="b-mitsumori" href="#s-form"></a>

@@ -483,3 +483,19 @@ function wpcf7_validate_spam_message( $result, $tag ) {
     return $result;
   }
   add_filter( 'wpcf7_validate', 'wpcf7_validate_spam_message', 10, 2 );
+
+//Contact Form 7 完了ページ
+  add_action( 'wp_footer', 'add_origin_thanks_page' );
+  function add_origin_thanks_page() {
+      echo <<< EOC
+  <script>
+  var thanksPage = {
+      37: 'https://posting-sanpomichi.com/thanks/',
+      84: 'https://posting-sanpomichi.com/office/thanks/',
+  };
+  document.addEventListener( 'wpcf7mailsent', function( event ) {
+      location = thanksPage[event.detail.contactFormId];
+  }, false );
+  </script>
+  EOC;
+  }
